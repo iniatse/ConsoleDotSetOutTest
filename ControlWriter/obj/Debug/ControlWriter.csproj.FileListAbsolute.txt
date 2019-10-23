@@ -1,0 +1,6 @@
+D:\programming\c#\WpfApp1\ControlWriter\bin\Debug\ControlWriter.dll
+D:\programming\c#\WpfApp1\ControlWriter\bin\Debug\ControlWriter.pdb
+D:\programming\c#\WpfApp1\ControlWriter\obj\Debug\ControlWriter.csprojAssemblyReference.cache
+D:\programming\c#\WpfApp1\ControlWriter\obj\Debug\ControlWriter.csproj.CoreCompileInputs.cache
+D:\programming\c#\WpfApp1\ControlWriter\obj\Debug\ControlWriter.dll
+D:\programming\c#\WpfApp1\ControlWriter\obj\Debug\ControlWriter.pdb

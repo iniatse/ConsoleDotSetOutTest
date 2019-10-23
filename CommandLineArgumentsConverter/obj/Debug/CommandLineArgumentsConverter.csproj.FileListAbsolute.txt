@@ -1,0 +1,6 @@
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\bin\Debug\CommandLineArgumentsConverter.dll
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\bin\Debug\CommandLineArgumentsConverter.pdb
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\obj\Debug\CommandLineArgumentsConverter.csprojAssemblyReference.cache
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\obj\Debug\CommandLineArgumentsConverter.csproj.CoreCompileInputs.cache
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\obj\Debug\CommandLineArgumentsConverter.dll
+D:\programming\c#\WpfApp1\CommandLineArgumentsConverter\obj\Debug\CommandLineArgumentsConverter.pdb

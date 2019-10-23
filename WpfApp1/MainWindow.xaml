@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1024" Width="1280">
+    <Window.Resources>
+        <System:Double x:Key="startButtonMargin">15</System:Double>
+        <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+        <TabControl x:Name="myTabControl">
+            <TabControl.ItemContainerStyle>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </Style>
+            </TabControl.ItemContainerStyle>
+            <TabItem Header="Starting page">
+                <Grid x:Name="FormLayoutGrid" Width="400" Height="200">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height = "*" />
+                        <RowDefinition Height = "*" />
+                        <RowDefinition Height = "*" />
+                    </Grid.RowDefinitions>
+                    <GroupBox Header="Build type">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="radioButtonDevelopment" GroupName="buildType" Checked="radioButtonDevelopment_Checked">Development</RadioButton>
+                            <RadioButton x:Name="radioButtonProduction" Grid.Column="1" GroupName="buildType" IsChecked="true" Checked="radioButtonProduction_Checked">Production</RadioButton>
+                        </Grid>
+                        <GroupBox.Margin>
+                            <Thickness Left="{StaticResource startButtonMargin}" Right="{StaticResource startButtonMargin}" />
+                        </GroupBox.Margin>
+                    </GroupBox>
+                    <GroupBox Grid.Row="1" Header="Target">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <RadioButton x:Name="buttonDemo" GroupName="demoOrBw">Demo</RadioButton>
+                            <RadioButton x:Name="buttonBueroWare" Grid.Column="1" GroupName="demoOrBw" IsChecked="True">Bueroware</RadioButton>
+                        </Grid>
+                        <GroupBox.Margin>
+                            <Thickness Left="{StaticResource startButtonMargin}" Right="{StaticResource startButtonMargin}" />
+                        </GroupBox.Margin>
+                    </GroupBox>
+                    <Button Grid.Row="2" Click="btnStart_Click">
+                        <Button.Content>Start</Button.Content>
+                        <Button.Margin>
+                            <Thickness Top="{StaticResource startButtonMargin}" Left="{StaticResource startButtonMargin}" Right="{StaticResource startButtonMargin}"
+                  Bottom="{StaticResource startButtonMargin}" />
+                        </Button.Margin>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Log">
+                <ScrollViewer x:Name="logSrollViewer">
+                    <TextBox x:Name="textBoxLog" TextWrapping="Wrap" IsReadOnly="True" Margin="20" BorderThickness="0" />
+                </ScrollViewer>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
